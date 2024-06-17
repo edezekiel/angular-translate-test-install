@@ -4,12 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-   "angular-translate": "npm:@neverendingsupport/angularjs-essentials@2.19.1-angular-translate-2.20.2"
+   "angular-translate": "npm:@neverendingsupport/angularjs-essentials@2.19.1-angular-translate-2.20.2",
+   "express": "^4.18.3",
+   "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   },
   "overrides": {
     "angular-translate": { ".": "npm:@neverendingsupport/angularjs-essentials@2.19.1-angular-translate-2.20.2" }
