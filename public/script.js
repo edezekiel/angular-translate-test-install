@@ -53,11 +53,7 @@ angular
 
     $translateProvider.useSanitizeValueStrategy('escape'); // works regardless
 
-    $translateProvider.useKeySanitizer((key) => { 
-      console.log('DOMPurify is defined:', DOMPurify.sanitize !== undefined);
-      console.log('Manually use global DOMPurify to sanitize key', DOMPurify.sanitize(key)) 
-
-      return DOMPurify.sanitize(key)});
+    console.log('DOMPurify.version', DOMPurify.version);
   },
 ])
 
@@ -87,5 +83,7 @@ angular
         $scope.tlData
       );
     };
+
+    $scope.domPurifyVersion = DOMPurify.version
   },
 ]);
