@@ -1,0 +1,17 @@
+{
+  "name": "angular-translate-test-install",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+   "angular-translate": "npm:@neverendingsupport/angularjs-essentials@2.19.1-angular-translate-2.20.2"
+  },
+  "overrides": {
+    "angular-translate": { ".": "npm:@neverendingsupport/angularjs-essentials@2.19.1-angular-translate-2.20.2" }
+  }
+}
